@@ -7,4 +7,4 @@
 # Ignore all files under the bin folder
 /bin/
 
-/__pycache__/
+/src/pythonCode/leetcode/array/twoSum/__pycache__/
