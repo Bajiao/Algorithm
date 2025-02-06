@@ -8,11 +8,11 @@ https://www.youtube.com/watch?v=u47GtXwePms&t=9s
 
 Retrieval Augmented Generation (RAG) combines retrieval from an external knowledge base with a large language model (LLM) for generation. In this setup, the **retriever** acts as a dynamic prompt provider by fetching relevant information, and the **generator** (LLM) uses that enriched prompt to produce the final output.
 
-### How It Works
+## How It Works
 
 1. **External Database Preparation:**
    - **Chunking:** Large documents are divided into smaller, meaningful pieces (chunks).
-   - **Vectorization:** Each chunk is converted into a high-dimensional vector (using embeddings) that captures its semantic meaning.
+   - **Vectorization:** Each chunk is converted into a high-dimensional vector (using [embeddings](embedding.md)) that captures its semantic meaning.
    - **Storage:** These vectors and their corresponding chunks are stored in a vector database for efficient similarity search.
 
 2. **Retrieval Process:**
@@ -24,7 +24,7 @@ Retrieval Augmented Generation (RAG) combines retrieval from an external knowled
    - The LLM receives both the original query and the additional context from the retriever.
    - The model then produces a final response that is informed by both the query and the relevant external information.
 
-### Diagram
+## Diagram
 
 Below is a diagram (using Mermaid syntax) to illustrate the process:
 
@@ -38,16 +38,13 @@ flowchart TD
     F[LLM (Generator)]
     G[Final Answer]
 
-    A --> B
-    B --> C
-    C --> D
-    D --> E
+    A --> B --> C --> D --> E
     A --> F
     E --> F
     F --> G
 ```
 
-### Summary
+## Summary
 
 - **Retriever as Prompt Provider:** The retriever extracts and provides context (from an external database of text chunks and vectors) that augments the original query.
 - **LLM as Generator:** The LLM uses the enriched prompt (original query plus retrieved context) to generate more accurate and factually grounded responses.
