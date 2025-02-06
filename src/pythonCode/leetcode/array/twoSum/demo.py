@@ -1,6 +1,6 @@
 # Contents of src/pythonCode/leetcode/array/twoSum/demo.py
 
-from pythonCode.leetcode.array.twoSum.solution03 import two_sum
+from solution03 import two_sum
 
 def main():
     # Test cases
