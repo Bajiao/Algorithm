@@ -28,7 +28,7 @@ Retrieval Augmented Generation (RAG) combines retrieval from an external knowled
 
 Below is a diagram (using Mermaid syntax) to illustrate the process:
 
-```mermaid
+```
 flowchart TD
     A[User Query]
     B[Query Embedding]
