@@ -18,6 +18,7 @@ def main():
     
     process = EmployeeDataProcess(file_path)
     process.display_first_10_rows()
+    process.display_last_5_rows()
 
 if __name__ == "__main__":
     main()
