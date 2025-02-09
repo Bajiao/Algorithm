@@ -6,7 +6,11 @@ class EmployeeDataProcess:
     
     def display_first_10_rows(self):
         print(self.data.head(10))
+        
+    def display_last_5_rows(self):
+        print(self.data.tail(5))
 
 # Example usage:
 # process = EmployeeDataProcess('path_to_your_file.csv')
 # process.display_first_10_rows()
+# process.display_last_5_rows()

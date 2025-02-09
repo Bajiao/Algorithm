@@ -46,4 +46,6 @@ git clone https://github.com/MichaelAquilina/zsh-you-should-use ${ZSH_CUSTOM:-~/
 ### [Install Python on mac](https://www.geeksforgeeks.org/how-to-install-python-on-mac/)
 ```
 brew install python
+
+pip install notebook
 ```
